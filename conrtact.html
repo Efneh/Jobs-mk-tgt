@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="./css/conrtact.css">
+    <title>HOUSE</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="title">
+                 <img src="./img/handyman.svg" alt="">
+                 <h1>HOUSE</h1>
+            </div>
+            <div class="navigation">
+                <ul class="navbar_item">
+                    <a href="./index.html">
+                        <li class="navbar_list">Компания</li>
+                    </a>
+                    <a href="#">
+                        <li class="navbar_item">Услуги</li>
+                    </a>
+                    <a href="#">
+                        <li class="navbar_item">Отзывы</li>
+                    </a>
+                    <a href="./conrtact.html">
+                        <li class="navbar_item">Оставить заявку</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="content_text">
+                <h1>Связаться с нами</h1>
+                <h2>Наши менеджеры свяжутся с вами в течении 5 минут</h2>
+            </div>
+            <div class="contact">
+                <div class="information">
+                    <input type="text" placeholder="Имя">
+                    <input type="email" placeholder="E-mail">
+                    <input type="tel" placeholder="+1 (234) 567-89-90">
+                </div>
+                <div>
+                    <button id="open" class="red_button">Отправить</button>
+                </div>
+            </div>
+        </div>
+        <dialog id="modal">
+            <div class="modal_content">
+                <h1>Спасибо!</h1>
+                <button id="close" class="red_button">Закрыть</button>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <div class="hr"></div>
+        <div class="footer_content">
+            <div class="footer_title">
+                <span>@ HOUSE 2023</span>
+            </div>
+            <div class="social_network">
+                <div class="vk">
+                    <img src="./img/vk.svg" alt="">
+                    <p class="red">Build_House.com</p>
+                </div>
+                <div class="telegram">
+                    <img src="./img/telegram.svg" alt="">
+                    <p class="red">@Build_House</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function(){
+            const Open = document.getElementById("open");
+            const Close = document.getElementById("close");
+            const ModalID = document.getElementById("modal");
+
+            Open.addEventListener ('click', () => {
+                ModalID.showModal();
+            });
+
+            Close.addEventListener ('click', () => {
+                ModalID.close();
+            });
+        })();
+    </script>
+</body>
+</html>
